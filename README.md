@@ -2,6 +2,7 @@
 Final Team Project for CMSC122 Computer Science with Applications 2
 
 Project Goal
+
 Yelp can provide recommendations for a specific location and Google Maps can provide directions, but if you want to visit multiple 
 bars or you want to compare bars near you, there is no feature that can recommend an optimized itinerary that accounts for your drinking 
 preferences while minimizing walking time between bars. Our goal of the project is to create a web-based application which allows users 
