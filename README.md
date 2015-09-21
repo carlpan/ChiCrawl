@@ -10,11 +10,13 @@ application. More specifically, we would like to make a bar crawl generator with
 and drinks based on user-entered preferences.
 
 Description of functionalities
+
 1. User enter preferences in the form fields
 2. After submitted, scroll down for results
 3. If results returned, user can click on the list of bars to get map route display, user can also specify travel mode, and show all bar locations.
 
 Project Structure
+
 1. Django framework
    - Chicrawl: contains general settings/urls for the framework with slight modifications to add 
               our app and static directory path
@@ -25,6 +27,7 @@ Project Structure
    - data: contains databse and JSON files
   - res: contains JSON/csv files for neighborhood names and coordinates
   - static: contains CSS file and background pcitures
+  
 2. Yelp: (build_db directory)
  	 contains all code used to scrape Yelp and Foursquare for generating database.
 	- chicago_bars.py : Uses the Yelp API to scrape business data for the top 80 ranked bars for each zipcode. 
@@ -33,6 +36,7 @@ Project Structure
 	                   and address. Inserts that data into a SQLite3 database.
 	- weighted_rank.py: Calculates the weighted rank for each bar and inserts it into the SQLite3 databse.
 	- price_level.py: Uses the Foursquare API to scrape price tier (number of dollar signs) information for each bar and inserts it into the database.
+	
 3. Foursquare: (foursquare-api directory)
    get_dict.py uses the foursquare api to attain menu/tag/phrases information about each bar listed in the bars3.db sqlite3 database scraped from the yelp api. 
    The reason why we are using the foursquare api in addition to the yelp api is because we want to enable search term functionalities for our bar crawl app. 
