@@ -1,6 +1,4 @@
 # ChiCrawl
-Final Team Project for CMSC122 Computer Science with Applications 2
-
 Project Goal
 
 Yelp can provide recommendations for a specific location and Google Maps can provide directions, but if you want to visit multiple 
@@ -45,6 +43,3 @@ Project Structure
    python dictionary with each KEY being the individual keyword in the menu/tags/phrases section and each VALUE being the list of restaurant that contains that keyword. 
    This python dictionary is eventually stored as a JSON file: foursquare.json.
 
-My contribution to the project
-- Responsible for all Django framework code, Google API, and all front-end code. 
-- Responsible for partial Yelp database preparation and Dijkstra’s algorithm for walking distance optimization.
